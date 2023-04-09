@@ -19,7 +19,8 @@ void setup() {
   }
 
 void loop() {
-    delay(100);
+    delay(50);
+    CAN_message_t msg;
     can1.read(msg);
     i = msg.buf[0];
     j = msg.buf[1];
